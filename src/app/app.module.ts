@@ -10,6 +10,7 @@ import { ProductModule } from './products/product.module';
 
 
 @NgModule({
+  // Declarations that belong to this module
   declarations: [
     AppComponent,
     WelcomeComponent,
@@ -23,6 +24,7 @@ import { ProductModule } from './products/product.module';
       { path: '', redirectTo: 'welcome', pathMatch: 'full' },
       { path: '**', redirectTo: 'welcome', pathMatch: 'full' },
     ]),
+    // Featured module
     ProductModule
   ],
   bootstrap: [AppComponent]
